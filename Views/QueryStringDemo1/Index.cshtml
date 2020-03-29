@@ -1,0 +1,28 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<div>
+
+     @*BindProperty*@
+    <a class="btn btn-primary" asp-route="BindPropertyAction" asp-route-Id=45>BindProperty</a> <br />  <br />
+
+
+
+    @*FromQuery*@
+    <a class="btn btn-secondary" asp-route="FromQueryAction" asp-route-FirstName="Vinit" asp-route-LastName="Suryarao">FromQuery</a>  <br />  <br />
+
+
+
+    @*FromRoute*@
+    <a class="btn btn-danger" asp-route="FromRouteAction" asp-route-FirstName="Vinit" asp-route-LastName="Suryarao">FromRoute</a> <br />  <br />
+
+
+
+    @*HttpContext*@
+    <a class="btn btn-dark" asp-route="HttpContextAction" asp-route-FirstName="Vinit" asp-route-LastName="Suryarao ">HttpContext</a>
+
+</div>
